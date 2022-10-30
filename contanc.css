@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #fff;
+    font-family: "Prompt", sans-serif;
+    line-height: 1.5;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    padding: 0 1.4rem;
+    margin: auto;
+  }
+  
+  .btn-dark, .btn-light, .btn-primary {
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    color: #333;
+    background-color: #EF6D6D;
+  }
+  .btn-light {
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  .btn-dark {
+    color: #fff;
+    background-color: #333;
+  }
+  
+  button[class^=btn-]:hover,
+  a[class^=btn-]:hover,
+  input[class^=btn-]:hover {
+    background-color: #EF6D6D;
+  }
+  
+  .bg-dark {
+    background-color: #333;
+  }
+  .bg-primary {
+    background-color: #EF6D6D;
+  }
+  .bg-light {
+    background-color: #f4f4f4;
+  }
+  
+  .py-1 {
+    padding: 1rem 0;
+  }
+  .py-2 {
+    padding: 2rem 0;
+  }
+  .py-3 {
+    padding: 3rem 0;
+  }
+  .py-4 {
+    padding: 4rem 0;
+  }
+  
+  .my-1 {
+    margin: 1rem 0;
+  }
+  .my-2 {
+    margin: 2rem 0;
+  }
+  .my-3 {
+    margin: 3rem 0;
+  }
+  .my-4 {
+    margin: 4rem 0;
+  }
+  
+  #index-header .main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .main-header .main-header__logo{
+    width: 75px;
+    height: 75px;
+  }
+  .main-nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .main-nav ul li{
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+  .main-nav ul li a{
+    /* transition: all 1s; */
+    color: #fff;
+    font-size: 20px;
+    
+  }
+  .main-nav ul li a:hover{
+    border-bottom: 2px solid #EF6D6D ;
+    
+  }
+  .main-nav ul li a.active{
+    border-bottom: 2px solid #EF6D6D;
+  }
+  #index-header{
+    background: url(../Freelancer/freelancer-img/bg.jpeg);
+    height: 15vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+  }
+  .main-header__content{
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    top: 40%;
+    left: 35%;
+    font-size: 30px;
+    
+  }
+  .btn-light:hover{
+    background-color:#333 ;
+    color: #fff;
+  }
+  .border-bottom{
+    height: 3px;
+    width: 30px;
+    background-color: #EF6D6D;
+    margin: 1rem auto;
+  }
+ 
+  .border-bottom-2{
+    height: 3px;
+    width: 100%;
+    background-color: #EF6D6D;
+    margin: 1rem auto;
+  }
+  
+  #footer__home{
+    background-color: #333;
+    padding: 20px;
+    /* margin-top: 20px; */
+    color: #fff;
+  }
+  #footer__home .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__home-left i{
+    padding: 10px;
+    
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all .4s;
+
+  }
+  .footer__home-left a i:hover{
+    background-color: #EF6D6D;
+  }
+  #contanc .form-fields{
+    display: grid;
+    grid-template-areas: 
+   'name email'
+    'subject phone'
+   'message message'
+    'button button';
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  #contanc .form-fields .name{
+    grid-area: name;
+  }
+  #contanc form .email{
+    grid-area: email;
+  }
+  #contanc form .subject{
+    grid-area: subject;
+  }
+  #contanc form .phone{
+    grid-area: phone;
+  }
+  #contanc form #message{
+    grid-area: message;
+  }
+  #contanc form .contanc-button{
+    grid-area: button;
+  }
+  #contanc form .input{
+    height: 50px;
+    padding: 5px;
+  }
+  #contanc form textarea{
+    height: 200px;
+  }
+  .contanc-button{
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #333;
+    color: #fff;
+   transition: all .5s;
+  }
+  .contanc-button:hover{
+    background-color: #fff;
+    border: 1px solid #333;
+    color: #333;
+  }
+  #contanc-b{
+    height: 200px;
+    background-color: #EF6D6D;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .contanc-info{
+    
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    align-items: center;
+    
+  }
+  .contanc-info div{
+     padding-top: 50px;
+  }
+  
+  
